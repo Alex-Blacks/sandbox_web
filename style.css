@@ -2,22 +2,6 @@ html {
   font-family: 'Times New Roman';
   background-color: rgb(197, 197, 197);
 }
-.box {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 150px;
-  height: 100px;
-  padding: 5px 2px 15px 10px;
-  border-top: 2px solid black;
-  border-right: 3px dotted pink;
-  border-bottom: 5px double green;
-
-  margin: 10px 13px 0px 5px;
-}
-span {
-  background-color: aqua;
-  border: 1px double black;
-}
 fieldset {
   border-color: black;
 }
@@ -44,4 +28,37 @@ td,
 th {
   border: 1px solid black;
   padding: 5px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: space-between;
+}
+.article {
+  flex: 1 1 100px;
+  border: 2px solid black;
+  margin-top: 5px;
+  padding: 5px;
+  min-width: 200px;
+}
+.article:nth-of-type(3) {
+  flex: 3 1 200px;
+  display: flex;
+  flex-flow: column;
+}
+.article:nth-of-type(3) div:first-child {
+  flex: 1 1 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+button {
+  flex: 1 1 auto;
+  font-size: 18px;
+  border: 2px solid black;
+  margin: 5px;
+  line-height: 1.5;
 }
