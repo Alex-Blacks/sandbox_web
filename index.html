@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Визитка</title>
+  </head>
+  <body>
+    <header>
+      <h1>Заголовок</h1>
+      <nav>
+        <ul>
+          <li><a href="#main">Меню</a></li>
+          <li><a href="#footer">Футер</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <fieldset>
+        <legend>Секции</legend>
+        <article>
+          <section>
+            <h3>1 Секция</h3>
+            <p><strong>Некий</strong> текст к секции</p>
+            <ul>
+              <li>Первый пункт списка</li>
+              <li>
+                Второй пункт списка
+                <ol>
+                  <li>Раз</li>
+                  <li>Два</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+          <hr />
+          <section>
+            <h3>2 Секция</h3>
+            <p>Некий <em>текст</em> к секции</p>
+          </section>
+          <hr />
+          <section>
+            <h3>3 Секция</h3>
+            <p>Некий текст к <span>секции</span></p>
+          </section>
+        </article>
+      </fieldset>
+      <div class="box">
+        <p>Первый <span>span</span> блок</p>
+      </div>
+      <div class="box">
+        <p>Второй блок</p>
+      </div>
+      <div class="box">
+        <p>Третий блок</p>
+      </div>
+    </main>
+    <aside>
+      <h3>Полезные ссылки</h3>
+    </aside>
+    <fieldset>
+      <legend>Таблица</legend>
+      <table>
+        <caption>
+          Таблица
+        </caption>
+        <tr>
+          <th colspan="3">Номер</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th colspan="3">Буквы</th>
+        </tr>
+        <tr>
+          <td rowspan="3">A</td>
+          <td rowspan="3">B</td>
+          <td rowspan="3">C</td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <form>
+      <fieldset>
+        <legend>Формы</legend>
+        <p>
+          <label for="login">Логин</label>
+          <input
+            type="text"
+            id="login"
+            name="user_login"
+            placeholder="Введите логин"
+            required
+          />
+        </p>
+        <div>
+          <p>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="user_password" />
+          </p>
+        </div>
+        <p>
+          <label for="msg">Описание</label>
+          <textarea name="user_message" id="msg"></textarea>
+        </p>
+        <p>
+          <label for="chek_1">Дам деняг</label>
+          <input type="checkbox" id="chek_1" name="test_many" />
+        </p>
+        <p>
+          <label for="chek_2">Я жлоб вонючий</label>
+          <input type="checkbox" id="chek_2" name="test_zhlob" />
+        </p>
+        <p>
+          <label for="card"
+            >Так с какой карты деньги дашь жлобы ты вонючий?</label
+          >
+          <select name="user_card" id="card">
+            <option value="alfa">Альфа</option>
+            <option value="sber">Сбер</option>
+            <option value="vtb">ВТБ</option>
+          </select>
+        </p>
+        <p>Так кто ты?</p>
+        <ul>
+          <li>
+            <label for="title_1">
+              <input type="radio" id="title_1" name="title" value="M." />
+              Мужик с деньгами
+            </label>
+          </li>
+          <li>
+            <label for="title_2">
+              <input type="radio" id="title_2" name="title" value="Ms." />
+              Бомж нищий
+            </label>
+          </li>
+        </ul>
+        <p class="button">
+          <button type="button">Жмак</button>
+        </p>
+      </fieldset>
+    </form>
+    <a
+      href="https://developer.mozilla.org/ru/docs/Web/HTML"
+      title="Жмакни"
+      target="_blank"
+      >Ссылка на наше ничего</a
+    >
+    <br />
+    <img src="https://via.placeholder.com/150" alt="Пустая картинка" />
+    <hr />
+    <footer id="footer">© 2025 Сайтодел фигов</footer>
+  </body>
+</html>

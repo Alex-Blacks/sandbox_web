@@ -1,0 +1,47 @@
+html {
+  font-family: 'Times New Roman';
+  background-color: rgb(197, 197, 197);
+}
+.box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 150px;
+  height: 100px;
+  padding: 5px 2px 15px 10px;
+  border-top: 2px solid black;
+  border-right: 3px dotted pink;
+  border-bottom: 5px double green;
+
+  margin: 10px 13px 0px 5px;
+}
+span {
+  background-color: aqua;
+  border: 1px double black;
+}
+fieldset {
+  border-color: black;
+}
+h1 {
+  text-align: center;
+  color: brown;
+}
+p {
+  font-size: 20px;
+  font-family: 'Pacifico';
+  margin: 0 auto;
+  padding: 0 7px 7px 7px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
